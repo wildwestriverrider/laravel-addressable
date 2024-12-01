@@ -264,7 +264,7 @@ class UsStateSeeder extends Seeder
         ];
 
         collect($states)->each(function ($item) {
-           UsState::query()->create([
+            UsState::query()->create([
                 'name' => $item['name'],
                 'abbr' => $item['abbr'],
                 'capitol' => $item['capitol'],

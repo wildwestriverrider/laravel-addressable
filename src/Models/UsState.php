@@ -1,4 +1,5 @@
 <?php
+
 namespace Wildwestriverrider\LaravelAddressable\Models;
 
 use Illuminate\Database\Eloquent\Model;
