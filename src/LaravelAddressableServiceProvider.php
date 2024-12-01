@@ -19,7 +19,10 @@ class LaravelAddressableServiceProvider extends PackageServiceProvider
             ->name('laravel-addressable')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_laravel_addressable_table')
+            ->hasMigrations([
+                'create_addressable_states_table',
+                'create_addressable_table'
+            ])
             ->hasCommand(LaravelAddressableCommand::class);
     }
 }
